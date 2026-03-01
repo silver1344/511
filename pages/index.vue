@@ -140,7 +140,7 @@
 
         <!-- ── 버스 하단 (번호판) ── -->
         <div class="bus-bottom">
-          <div class="license-plate">인천 가 3656</div>
+          <div class="license-plate">인천 가 0118</div>
         </div>
 
       </div>
