@@ -16,6 +16,11 @@ export default defineNuxtConfig({
         { property: 'og:title', content: '511 BAND 공연 초대장' },
         { property: 'og:description', content: '511 밴드 공연 초대장' },
         { property: 'og:type', content: 'website' }
+      ],
+      link: [
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap' }
       ]
     }
   },

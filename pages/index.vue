@@ -7,15 +7,18 @@
         <div class="bus-badge">
           <div class="bus-number">511</div>
         </div>
+        <div class="header-icon">🚌</div>
       </header>
 
-      <!-- Route Divider -->
+      <!-- Route Dots -->
       <div class="route-divider">
-        <span class="stop"></span>
-        <span class="track"></span>
-        <span class="stop current"></span>
-        <span class="track"></span>
-        <span class="stop"></span>
+        <span class="dot sm"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot sm"></span>
       </div>
 
       <!-- Event Info -->
@@ -37,7 +40,7 @@
           <h3>기 관 사</h3>
           <span class="tag-dot"></span>
         </div>
-        <p class="members-invite">511번 버스가 여러분의 탑승을 기다립니다</p>
+        <p class="members-invite">511 버스가 여러분의 탑승을 기다립니다</p>
         <div class="members-grid">
           <div class="member-item">이도율</div>
           <div class="member-item">권경하</div>
@@ -53,20 +56,48 @@
 
         <div class="setlist-part">
           <h4 class="part-title">1 부</h4>
-          <div class="setlist-item">1. Wave To Earth — 사랑으로</div>
-          <div class="setlist-item">2. Nerd Connection — 그대만 있다면</div>
-          <div class="setlist-item">3. 한로로 — 사랑하게 될거야</div>
-          <div class="setlist-item">4. 10cm — 너에게 닿기를</div>
+          <div class="setlist-item">
+            <span class="track-num">1</span>
+            <span class="track-text">Wave To Earth — 사랑으로</span>
+          </div>
+          <div class="setlist-item">
+            <span class="track-num">2</span>
+            <span class="track-text">Nerd Connection — 그대만 있다면</span>
+          </div>
+          <div class="setlist-item">
+            <span class="track-num">3</span>
+            <span class="track-text">한로로 — 사랑하게 될거야</span>
+          </div>
+          <div class="setlist-item">
+            <span class="track-num">4</span>
+            <span class="track-text">10cm — 너에게 닿기를</span>
+          </div>
         </div>
 
-        <div class="break-time">— 10분 쉬는 시간 —</div>
+        <div class="break-time">
+          <span class="break-dots">· · ·</span>
+          <span class="break-text">쉬는 시간</span>
+          <span class="break-dots">· · ·</span>
+        </div>
 
         <div class="setlist-part">
           <h4 class="part-title">2 부</h4>
-          <div class="setlist-item">5. DAY6 — Welcome to the Show</div>
-          <div class="setlist-item">6. Official髭男dism — Pretender</div>
-          <div class="setlist-item">7. DAY6 — 그녀가 웃었다</div>
-          <div class="setlist-item">8. 전영호 — Butterfly</div>
+          <div class="setlist-item">
+            <span class="track-num">5</span>
+            <span class="track-text">DAY6 — Welcome to the Show</span>
+          </div>
+          <div class="setlist-item">
+            <span class="track-num">6</span>
+            <span class="track-text">Official髭男dism — Pretender</span>
+          </div>
+          <div class="setlist-item">
+            <span class="track-num">7</span>
+            <span class="track-text">DAY6 — 그녀가 웃었다</span>
+          </div>
+          <div class="setlist-item">
+            <span class="track-num">8</span>
+            <span class="track-text">전영호 — Butterfly</span>
+          </div>
         </div>
       </section>
 
