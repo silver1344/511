@@ -220,8 +220,8 @@ body {
 }
 
 .wiper-l {
-  width: 44%;
-  left: 7%;
+  width: 35%;
+  left: 8%;
   transform-origin: left bottom;
   animation: wipe-l 4s ease-in-out infinite alternate;
 }
@@ -231,8 +231,8 @@ body {
 }
 
 .wiper-r {
-  width: 40%;
-  right: 7%;
+  width: 31%;
+  right: 8%;
   transform-origin: right bottom;
   animation: wipe-r 4s ease-in-out infinite alternate;
 }
@@ -242,13 +242,13 @@ body {
 }
 
 @keyframes wipe-l {
-  from { transform: rotate(14deg); }
-  to   { transform: rotate(62deg); }
+  from { transform: rotate(8deg); }
+  to   { transform: rotate(55deg); }
 }
 
 @keyframes wipe-r {
-  from { transform: rotate(-14deg); }
-  to   { transform: rotate(-62deg); }
+  from { transform: rotate(-8deg); }
+  to   { transform: rotate(-55deg); }
 }
 
 /* 헤드라이트 + 그릴 */
