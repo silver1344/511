@@ -7,8 +7,6 @@
         <div class="bus-badge">
           <div class="bus-number">511</div>
         </div>
-        <div class="band-text">B A N D</div>
-        <p class="header-tagline">인하대를 달리던 511번처럼, 다시 한번 달립니다</p>
       </header>
 
       <!-- Route Divider -->
@@ -36,9 +34,10 @@
       <section class="members">
         <div class="members-header">
           <span class="tag-dot"></span>
-          <h3>탑 승 멤 버</h3>
+          <h3>기 관 사</h3>
           <span class="tag-dot"></span>
         </div>
+        <p class="members-invite">511번 버스가 여러분의 탑승을 기다립니다</p>
         <div class="members-grid">
           <div class="member-item">이도율</div>
           <div class="member-item">권경하</div>
@@ -56,7 +55,7 @@
           <h4 class="part-title">1 부</h4>
           <div class="setlist-item">1. Wave To Earth — 사랑으로</div>
           <div class="setlist-item">2. Nerd Connection — 그대만 있다면</div>
-          <div class="setlist-item">3. DK — Go!</div>
+          <div class="setlist-item">3. 한로로 — 사랑하게 될거야</div>
           <div class="setlist-item">4. 10cm — 너에게 닿기를</div>
         </div>
 

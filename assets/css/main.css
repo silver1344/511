@@ -73,20 +73,6 @@ body {
   text-shadow: 2px 3px 0 rgba(0, 0, 0, 0.25);
 }
 
-.band-text {
-  font-size: 0.85rem;
-  color: #5DC05A;
-  letter-spacing: 10px;
-  font-weight: bold;
-  margin-bottom: 18px;
-}
-
-.header-tagline {
-  font-size: 0.82rem;
-  color: #7aaa7a;
-  line-height: 1.7;
-  letter-spacing: 0.3px;
-}
 
 /* ── ROUTE DIVIDER ───────────────────── */
 
@@ -219,6 +205,14 @@ body {
   border-radius: 50%;
   background: #5DC05A;
   opacity: 0.5;
+}
+
+.members-invite {
+  text-align: center;
+  font-size: 0.78rem;
+  color: #6a9a6a;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
 }
 
 .members-grid {
