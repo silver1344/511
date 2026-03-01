@@ -175,33 +175,32 @@ body {
   position: absolute;
   bottom: 14px;
   height: 2px;
-  background: rgba(0, 0, 0, 0.38);
+  background: rgba(0, 0, 0, 0.42);
   border-radius: 1px;
-  transform-origin: bottom;
 }
 
 .wiper-l {
-  width: 46%;
-  left: 4%;
-  transform: rotate(-30deg);
-  animation: wipe-l 5s ease-in-out infinite 1s;
+  width: 44%;
+  left: 6%;
+  transform-origin: left bottom;
+  animation: wipe-l 3.8s ease-in-out infinite alternate;
 }
 
 .wiper-r {
-  width: 42%;
-  right: 4%;
-  transform: rotate(30deg);
-  animation: wipe-r 5s ease-in-out infinite 1s;
+  width: 40%;
+  right: 6%;
+  transform-origin: right bottom;
+  animation: wipe-r 3.8s ease-in-out infinite alternate;
 }
 
 @keyframes wipe-l {
-  0%, 35%, 100% { transform: rotate(-30deg); }
-  18%           { transform: rotate(12deg); }
+  from { transform: rotate(-38deg); }
+  to   { transform: rotate(30deg); }
 }
 
 @keyframes wipe-r {
-  0%, 35%, 100% { transform: rotate(30deg); }
-  18%           { transform: rotate(-12deg); }
+  from { transform: rotate(38deg); }
+  to   { transform: rotate(-30deg); }
 }
 
 /* 헤드라이트 + 그릴 */
