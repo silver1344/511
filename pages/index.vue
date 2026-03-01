@@ -43,11 +43,11 @@
             </div>
             <p class="members-invite">511 밴드가 여러분의 탑승을 기다립니다</p>
             <div class="members-grid">
-              <div class="member-item">권경하</div>
-              <div class="member-item">이도율</div>
-              <div class="member-item">변세미</div>
-              <div class="member-item">이재호</div>
-              <div class="member-item">최정은</div>
+              <div class="member-item">🎹 권경하</div>
+              <div class="member-item">🎸 이도율</div>
+              <div class="member-item">🎸 변세미</div>
+              <div class="member-item">🎸 이재호</div>
+              <div class="member-item">🥁 최정은</div>
             </div>
           </section>
 
