@@ -148,59 +148,107 @@ body {
   pointer-events: none;
 }
 
+/* 빗방울 효과 */
+.windshield::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 13px,
+    rgba(190, 225, 255, 0.09) 13px,
+    rgba(190, 225, 255, 0.09) 14px
+  );
+  background-size: 100% 14px;
+  animation: rain-fall 0.5s linear infinite;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes rain-fall {
+  from { background-position-y: 0; }
+  to   { background-position-y: 14px; }
+}
+
 .windshield-content {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   text-align: center;
+  background: rgba(5, 10, 5, 0.52);
+  padding: 9px 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(93, 192, 90, 0.25);
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.4), inset 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 .ws-date {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 700;
-  color: rgba(255, 255, 255, 0.93);
-  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.45);
-  margin-bottom: 6px;
+  color: #7dd67a;
+  text-shadow: 0 0 8px rgba(93, 192, 90, 0.6);
+  margin-bottom: 4px;
   letter-spacing: 0.5px;
 }
 
 .ws-time {
-  font-size: 0.88rem;
-  color: rgba(255, 255, 255, 0.76);
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
-  letter-spacing: 1.5px;
+  font-size: 0.82rem;
+  color: rgba(125, 214, 122, 0.72);
+  text-shadow: 0 0 6px rgba(93, 192, 90, 0.4);
+  letter-spacing: 2px;
 }
 
 /* 와이퍼 */
 .wiper {
   position: absolute;
-  bottom: 14px;
-  height: 2px;
-  background: rgba(0, 0, 0, 0.42);
-  border-radius: 1px;
+  bottom: 16px;
+  height: 3px;
+  background: rgba(20, 20, 20, 0.65);
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  z-index: 3;
+}
+
+.wiper::before {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: rgba(15, 15, 15, 0.75);
+  border-radius: 50%;
+  top: -3px;
 }
 
 .wiper-l {
   width: 44%;
-  left: 6%;
+  left: 7%;
   transform-origin: left bottom;
-  animation: wipe-l 3.8s ease-in-out infinite alternate;
+  animation: wipe-l 4s ease-in-out infinite alternate;
+}
+
+.wiper-l::before {
+  left: -4px;
 }
 
 .wiper-r {
   width: 40%;
-  right: 6%;
+  right: 7%;
   transform-origin: right bottom;
-  animation: wipe-r 3.8s ease-in-out infinite alternate;
+  animation: wipe-r 4s ease-in-out infinite alternate;
+}
+
+.wiper-r::before {
+  right: -4px;
 }
 
 @keyframes wipe-l {
-  from { transform: rotate(-38deg); }
-  to   { transform: rotate(30deg); }
+  from { transform: rotate(14deg); }
+  to   { transform: rotate(62deg); }
 }
 
 @keyframes wipe-r {
-  from { transform: rotate(38deg); }
-  to   { transform: rotate(-30deg); }
+  from { transform: rotate(-14deg); }
+  to   { transform: rotate(-62deg); }
 }
 
 /* 헤드라이트 + 그릴 */
@@ -221,6 +269,16 @@ body {
   box-shadow:
     0 0 14px rgba(255, 230, 40, 0.95),
     0 0 32px rgba(255, 210, 20, 0.5);
+  animation: headlight-glow 3s ease-in-out infinite;
+}
+
+@keyframes headlight-glow {
+  0%, 100% {
+    box-shadow: 0 0 14px rgba(255, 230, 40, 0.95), 0 0 32px rgba(255, 210, 20, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 22px rgba(255, 235, 60, 1), 0 0 50px rgba(255, 215, 30, 0.75);
+  }
 }
 
 .front-grill {
