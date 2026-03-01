@@ -1,43 +1,36 @@
 <template>
   <div class="page-wrapper">
-    <div class="bus-container">
+    <div class="bus-side-wrap">
 
-      <div class="bus-frame">
+      <div class="bus-side-frame">
 
-        <!-- ── 버스 정면 ── -->
-        <div class="bus-front">
-
-          <!-- 행선지 보드 -->
-          <div class="dest-board">
-            <div class="route-badge">511</div>
-            <div class="dest-info">
-              <div class="dest-label">FINAL STOP</div>
-              <div class="dest-name">공간 비틀즈</div>
+        <!-- ── 버스 앞부분 (위, 옆면에서 본 정면) ── -->
+        <div class="bus-nose">
+          <div class="nose-left">
+            <div class="nose-route">511</div>
+            <div class="nose-dest">
+              <span class="nose-label">FINAL STOP</span>
+              <span class="nose-place">공간 비틀즈</span>
             </div>
           </div>
-
-          <!-- 앞유리 -->
-          <div class="windshield">
-            <div class="windshield-content">
-              <div class="ws-date">2025. 5. 9 (토)</div>
-              <div class="ws-time">오후 6시</div>
-            </div>
-            <div class="wiper wiper-l"></div>
-            <div class="wiper wiper-r"></div>
+          <div class="nose-datetime">
+            <div class="nose-date">2025. 5. 9 (토)</div>
+            <div class="nose-time">오후 6시</div>
           </div>
-
-          <!-- 헤드라이트 + 그릴 -->
-          <div class="front-row">
-            <div class="headlight"></div>
-            <div class="front-grill"></div>
-            <div class="headlight"></div>
-          </div>
-
         </div>
-        <!-- ── 버스 정면 끝 ── -->
+
+        <!-- ── 창문 열 (옆면 창문) ── -->
+        <div class="side-windows">
+          <div class="win"></div>
+          <div class="win"></div>
+          <div class="win"></div>
+          <div class="win"></div>
+          <div class="win"></div>
+          <div class="win"></div>
+        </div>
 
         <!-- ── 버스 내부 (콘텐츠) ── -->
-        <div class="bus-body">
+        <div class="bus-interior">
 
           <!-- 기관사 -->
           <section class="members">
@@ -48,11 +41,26 @@
             </div>
             <p class="members-invite">511 버스가 여러분의 탑승을 기다립니다</p>
             <div class="members-grid">
-              <div class="member-item">이도율</div>
-              <div class="member-item">권경하</div>
-              <div class="member-item">변세미</div>
-              <div class="member-item">이재호</div>
-              <div class="member-item">최정은</div>
+              <div class="member-item">
+                <span class="m-icon">🎸</span>
+                <span class="m-name">이도율</span>
+              </div>
+              <div class="member-item">
+                <span class="m-icon">🎹</span>
+                <span class="m-name">권경하</span>
+              </div>
+              <div class="member-item">
+                <span class="m-icon">🎸</span>
+                <span class="m-name">변세미</span>
+              </div>
+              <div class="member-item">
+                <span class="m-icon">🎸</span>
+                <span class="m-name">이재호</span>
+              </div>
+              <div class="member-item">
+                <span class="m-icon">🥁</span>
+                <span class="m-name">최정은</span>
+              </div>
             </div>
           </section>
 
@@ -138,13 +146,19 @@
         </div>
         <!-- ── 버스 내부 끝 ── -->
 
-        <!-- ── 버스 하단 (번호판) ── -->
-        <div class="bus-bottom">
+        <!-- ── 버스 후면 (아래) ── -->
+        <div class="bus-rear">
           <div class="license-plate">인천 가 3656</div>
         </div>
 
       </div>
-      <!-- ── bus-frame 끝 ── -->
+      <!-- ── bus-side-frame 끝 ── -->
+
+      <!-- 바퀴 -->
+      <div class="bus-wheels">
+        <div class="wheel"></div>
+        <div class="wheel"></div>
+      </div>
 
     </div>
   </div>
