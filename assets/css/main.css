@@ -242,13 +242,13 @@ body {
 }
 
 @keyframes wipe-l {
-  from { transform: rotate(8deg); }
-  to   { transform: rotate(55deg); }
+  from { transform: rotate(-8deg); }
+  to   { transform: rotate(-55deg); }
 }
 
 @keyframes wipe-r {
-  from { transform: rotate(-8deg); }
-  to   { transform: rotate(-55deg); }
+  from { transform: rotate(8deg); }
+  to   { transform: rotate(55deg); }
 }
 
 /* 헤드라이트 + 그릴 */
