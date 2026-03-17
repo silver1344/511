@@ -299,12 +299,92 @@ body {
   background: #070e07;
   padding: 22px 18px;
   border-top: 4px solid #2d7a2a;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 무대 ambient 조명 */
+.bus-body::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 60%;
+  background: radial-gradient(ellipse, rgba(93, 192, 90, 0.07) 0%, transparent 70%);
+  animation: stage-ambient 3.5s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes stage-ambient {
+  from { transform: translateX(-50%) scale(0.9); opacity: 0.5; }
+  to   { transform: translateX(-50%) scale(1.15); opacity: 1; }
+}
+
+/* 음표 파티클 */
+.music-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.note {
+  position: absolute;
+  bottom: -30px;
+  color: rgba(93, 192, 90, 0.11);
+  font-size: 1.1rem;
+  animation: float-note linear infinite;
+  user-select: none;
+}
+
+.note:nth-child(1) { left: 5%;  animation-duration: 9s;  animation-delay: 0s; }
+.note:nth-child(2) { left: 18%; animation-duration: 12s; animation-delay: -4s; }
+.note:nth-child(3) { left: 33%; animation-duration: 10s; animation-delay: -2s; }
+.note:nth-child(4) { left: 50%; animation-duration: 14s; animation-delay: -7s; }
+.note:nth-child(5) { left: 65%; animation-duration: 8s;  animation-delay: -1s; }
+.note:nth-child(6) { left: 78%; animation-duration: 11s; animation-delay: -5s; }
+.note:nth-child(7) { left: 91%; animation-duration: 13s; animation-delay: -3s; }
+
+@keyframes float-note {
+  0%   { transform: translateY(0) rotate(0deg);    opacity: 0; }
+  8%   { opacity: 0.9; }
+  85%  { opacity: 0.35; }
+  100% { transform: translateY(-200vh) rotate(22deg); opacity: 0; }
+}
+
+/* 스크롤 reveal — 섹션 */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 스크롤 reveal — 개별 아이템 */
+.reveal-item {
+  opacity: 0;
+  transition: opacity 0.5s ease calc(var(--d, 0) * 0.08s);
+}
+
+.reveal-item.visible {
+  opacity: 1;
 }
 
 .section-divider {
   height: 1px;
   background: rgba(93, 192, 90, 0.12);
   margin: 20px 0;
+  position: relative;
+  z-index: 1;
 }
 
 /* ── 기관사 섹션 ── */
@@ -423,6 +503,12 @@ body {
   font-size: 0.7rem;
   font-weight: 700;
   color: #7dd67a;
+  animation: beat-pulse 2s ease-in-out infinite;
+}
+
+@keyframes beat-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(93, 192, 90, 0.45); }
+  50%       { box-shadow: 0 0 0 6px rgba(93, 192, 90, 0); }
 }
 
 .track-text {
