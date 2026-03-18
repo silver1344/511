@@ -9,7 +9,7 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' },
-        { name: 'description', content: '김지환 ♥ 이택호 결혼식에 초대합니다. 2026년 5월 17일 일요일 오후 1시' },
+        { name: 'description', content: '김지환 ♥ 박택호 결혼식에 초대합니다. 2026년 5월 17일 일요일 오후 1시' },
         { property: 'og:title', content: '지환 ⚡ 택호 결혼합니다' },
         { property: 'og:description', content: '2026.05.17 SUN PM 1:00 | Powered by KEPCO E&C' },
         { property: 'og:type', content: 'website' },

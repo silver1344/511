@@ -62,7 +62,7 @@
             <div class="spec-row">
               <span class="spec-label">BRIDE</span>
               <span class="spec-dots"></span>
-              <span class="spec-value">이 택 호</span>
+              <span class="spec-value">박 택 호</span>
             </div>
           </div>
 
@@ -340,7 +340,7 @@
         <Transition name="slide">
           <div v-if="accountOpen.bride" class="account-list">
             <div class="account-item">
-              <span class="account-label">신부 이택호</span>
+              <span class="account-label">신부 박택호</span>
               <span class="account-number">카카오뱅크 3333-00-0000000</span>
               <button class="copy-btn" @click="copyAccount('카카오뱅크 3333-00-0000000')">COPY</button>
             </div>
@@ -376,7 +376,7 @@
         <span class="f-line"></span>
         <span class="f-node"></span>
       </div>
-      <p class="footer-names">김지환 & 이택호</p>
+      <p class="footer-names">김지환 & 박택호</p>
       <p class="footer-date">2026. 05. 17</p>
       <p class="footer-company">Powered by KEPCO E&C</p>
     </footer>
@@ -392,7 +392,7 @@
 useHead({
   title: '지환 ♥ 택호 결혼합니다',
   meta: [
-    { name: 'description', content: '김지환 ♥ 이택호 결혼식에 초대합니다' },
+    { name: 'description', content: '김지환 ♥ 박택호 결혼식에 초대합니다' },
     { property: 'og:title', content: '지환 ♥ 택호 결혼합니다' },
     { property: 'og:description', content: '2026년 5월 17일 일요일 오후 1시 | 그랜드 컨벤션홀' },
     { property: 'og:type', content: 'website' },
