@@ -263,44 +263,6 @@
       </div>
     </section>
 
-    <!-- ── 참석 여부 ── -->
-    <section class="rsvp-section reveal">
-      <div class="section-icon">✉️</div>
-      <h2 class="section-title">참석 여부 전달</h2>
-      <p class="rsvp-desc">
-        참석 여부를 미리 알려주시면<br>
-        준비하는 데 큰 도움이 됩니다.
-      </p>
-      <div class="rsvp-form">
-        <div class="rsvp-field">
-          <label>성함</label>
-          <input v-model="rsvp.name" type="text" placeholder="성함을 입력해주세요" />
-        </div>
-        <div class="rsvp-field">
-          <label>참석 여부</label>
-          <div class="rsvp-radio-group">
-            <label class="rsvp-radio">
-              <input v-model="rsvp.attending" type="radio" value="yes" />
-              <span>참석</span>
-            </label>
-            <label class="rsvp-radio">
-              <input v-model="rsvp.attending" type="radio" value="no" />
-              <span>불참</span>
-            </label>
-          </div>
-        </div>
-        <div class="rsvp-field">
-          <label>식사 인원</label>
-          <div class="rsvp-counter">
-            <button @click="rsvp.guests = Math.max(1, rsvp.guests - 1)">−</button>
-            <span>{{ rsvp.guests }}명</span>
-            <button @click="rsvp.guests = Math.min(10, rsvp.guests + 1)">+</button>
-          </div>
-        </div>
-        <button class="rsvp-submit" @click="submitRsvp">전달하기</button>
-      </div>
-    </section>
-
     <!-- ── 화환 안내 ── -->
     <section class="notice-section reveal">
       <p class="notice-text">
@@ -371,17 +333,6 @@ const copyAccount = async (text) => {
   }
 }
 
-const rsvp = reactive({ name: '', attending: 'yes', guests: 1 })
-const submitRsvp = () => {
-  if (!rsvp.name.trim()) {
-    showToast('성함을 입력해주세요')
-    return
-  }
-  showToast('참석 여부가 전달되었습니다. 감사합니다!')
-  rsvp.name = ''
-  rsvp.attending = 'yes'
-  rsvp.guests = 1
-}
 
 onMounted(() => {
   const observer = new IntersectionObserver(
