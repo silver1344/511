@@ -1,195 +1,403 @@
 <template>
-  <div class="page-wrapper">
-    <div class="bus-container">
-      <div class="bus-frame">
-        <!-- ── 버스 정면 ── -->
-        <div class="bus-front">
-          <!-- 행선지 보드 -->
-          <div class="dest-board">
-            <div class="route-badge">511</div>
-            <div class="dest-info">
-              <div class="dest-label">FINAL STOP</div>
-              <div class="dest-name">공간 비틀즈</div>
-            </div>
-          </div>
+  <div class="wedding-wrapper">
+    <!-- ── 히어로 섹션 ── -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-label">W E D D I N G</p>
+        <h1 class="hero-names">
+          <span class="groom-name">지환</span>
+          <span class="heart-icon">♥</span>
+          <span class="bride-name">수연</span>
+        </h1>
+        <p class="hero-date">2026. 05. 17. SUN PM 1:00</p>
+        <p class="hero-venue">그랜드 컨벤션홀 3층 루체홀</p>
+      </div>
+      <div class="scroll-indicator">
+        <span></span>
+      </div>
+    </section>
 
-          <!-- 앞유리 -->
-          <div class="windshield">
-            <div class="windshield-content">
-              <div class="ws-date">2026. 5. 9 (토)</div>
-              <div class="ws-time">오후 7시</div>
-            </div>
-            <div class="wiper wiper-l"></div>
-            <div class="wiper wiper-r"></div>
-          </div>
+    <!-- ── 인사말 ── -->
+    <section class="greeting reveal">
+      <div class="section-icon">💌</div>
+      <h2 class="section-title">초대합니다</h2>
+      <div class="greeting-divider"></div>
+      <p class="greeting-text">
+        서로 다른 길을 걸어온 두 사람이<br>
+        이제 같은 길을 함께 걸어가려 합니다.<br><br>
+        따스한 봄날,<br>
+        저희 두 사람이 사랑으로 하나 되는 날<br>
+        귀한 걸음 하시어<br>
+        축복해 주시면 감사하겠습니다.
+      </p>
+      <div class="parents-info">
+        <p class="parent-line">
+          <span class="parent-role">신랑측</span>
+          <span class="parent-names">김영호 · 박미정</span>의 장남
+          <span class="child-name">지환</span>
+        </p>
+        <p class="parent-line">
+          <span class="parent-role">신부측</span>
+          <span class="parent-names">이상훈 · 정은희</span>의 차녀
+          <span class="child-name">수연</span>
+        </p>
+      </div>
+    </section>
 
-          <!-- 헤드라이트 + 그릴 -->
-          <div class="front-row">
-            <div class="headlight"></div>
-            <div class="front-grill"></div>
-            <div class="headlight"></div>
-          </div>
+    <!-- ── 캘린더 ── -->
+    <section class="calendar-section reveal">
+      <h2 class="section-title">2026년 5월</h2>
+      <div class="calendar">
+        <div class="cal-header">
+          <span class="cal-sun">일</span>
+          <span>월</span>
+          <span>화</span>
+          <span>수</span>
+          <span>목</span>
+          <span>금</span>
+          <span class="cal-sat">토</span>
         </div>
-        <!-- ── 버스 정면 끝 ── -->
+        <div class="cal-body">
+          <!-- 5월 1일 = 금요일 -->
+          <span class="cal-empty"></span>
+          <span class="cal-empty"></span>
+          <span class="cal-empty"></span>
+          <span class="cal-empty"></span>
+          <span class="cal-empty"></span>
+          <span>1</span>
+          <span class="cal-sat">2</span>
 
-        <!-- ── 버스 내부 (콘텐츠) ── -->
-        <div class="bus-body">
-          <!-- 음표 파티클 -->
-          <div class="music-particles" aria-hidden="true">
-            <span class="note">♩</span>
-            <span class="note">♪</span>
-            <span class="note">♫</span>
-            <span class="note">♬</span>
-            <span class="note">♩</span>
-            <span class="note">♪</span>
-            <span class="note">♫</span>
-          </div>
+          <span class="cal-sun">3</span>
+          <span>4</span>
+          <span>5</span>
+          <span>6</span>
+          <span>7</span>
+          <span>8</span>
+          <span class="cal-sat">9</span>
 
-          <!-- 기관사 -->
-          <section class="members reveal">
-            <div class="members-header">
-              <span class="tag-dot"></span>
-              <h3>기 관 사</h3>
-              <span class="tag-dot"></span>
-            </div>
-            <p class="members-invite">511 밴드가 여러분의 탑승을 기다립니다</p>
-            <div class="members-grid">
-              <div class="member-item reveal-item" style="--d:0">🎹 권경하</div>
-              <div class="member-item reveal-item" style="--d:1">🎸 이도율</div>
-              <div class="member-item reveal-item" style="--d:2">🎸 변세미</div>
-              <div class="member-item reveal-item" style="--d:3">🎸 이재호</div>
-              <div class="member-item reveal-item" style="--d:4">🥁 최정은</div>
-            </div>
-          </section>
+          <span class="cal-sun">10</span>
+          <span>11</span>
+          <span>12</span>
+          <span>13</span>
+          <span>14</span>
+          <span>15</span>
+          <span class="cal-sat">16</span>
 
-          <div class="section-divider"></div>
+          <span class="cal-sun cal-highlight">17</span>
+          <span>18</span>
+          <span>19</span>
+          <span>20</span>
+          <span>21</span>
+          <span>22</span>
+          <span class="cal-sat">23</span>
 
-          <!-- 셋리스트 -->
-          <section class="setlist reveal">
-            <h3 class="setlist-title">🎵 SET LIST</h3>
+          <span class="cal-sun">24</span>
+          <span>25</span>
+          <span>26</span>
+          <span>27</span>
+          <span>28</span>
+          <span>29</span>
+          <span class="cal-sat">30</span>
 
-            <div class="setlist-part">
-              <h4 class="part-title">1 부</h4>
-              <div class="setlist-item reveal-item" style="--d:0">
-                <span class="track-num">1</span>
-                <span class="track-text">Wave To Earth — 사랑으로</span>
-              </div>
-              <div class="setlist-item reveal-item" style="--d:1">
-                <span class="track-num">2</span>
-                <span class="track-text">Nerd Connection — 그대만 있다면</span>
-              </div>
-              <div class="setlist-item reveal-item" style="--d:2">
-                <span class="track-num">3</span>
-                <span class="track-text">한로로 — 사랑하게 될거야</span>
-              </div>
-              <div class="setlist-item reveal-item" style="--d:3">
-                <span class="track-num">4</span>
-                <span class="track-text">10cm — 너에게 닿기를</span>
-              </div>
-            </div>
-
-            <div class="break-time">
-              <span class="break-dots">· · ·</span>
-              <span class="break-text">쉬는 시간</span>
-              <span class="break-dots">· · ·</span>
-            </div>
-
-            <div class="setlist-part">
-              <h4 class="part-title">2 부</h4>
-              <div class="setlist-item reveal-item" style="--d:4">
-                <span class="track-num">5</span>
-                <span class="track-text">DAY6 — Welcome to the Show</span>
-              </div>
-              <div class="setlist-item reveal-item" style="--d:5">
-                <span class="track-num">6</span>
-                <span class="track-text">Official髭男dism — Pretender</span>
-              </div>
-              <div class="setlist-item reveal-item" style="--d:6">
-                <span class="track-num">7</span>
-                <span class="track-text">DAY6 — 그녀가 웃었다</span>
-              </div>
-              <div class="setlist-item reveal-item" style="--d:7">
-                <span class="track-num">8</span>
-                <span class="track-text">전영호 — Butterfly</span>
-              </div>
-            </div>
-          </section>
-
-          <div class="section-divider"></div>
-
-          <!-- 오시는 길 -->
-          <section class="location reveal">
-            <h3 class="location-title">📍 오시는 길</h3>
-            <div class="venue-detail">
-              <div class="venue-name">공간 비틀즈</div>
-              <div class="venue-address">
-                서울특별시 마포구 와우산로29나길 18-6
-              </div>
-              <div class="venue-info">
-                지하철 2호선 홍익대입구역 7번 출구 도보 5분
-              </div>
-            </div>
-
-            <div class="map-container">
-              <img
-                src="/assets/images/nav.png"
-                alt="공간 비틀즈 약도"
-                class="map-image"
-              />
-            </div>
-
-            <div class="map-link">
-              <a
-                href="https://map.naver.com/p/search/%EA%B3%B5%EA%B0%84%20%EB%B9%84%ED%8B%80%EC%A6%88/place/1292176455?c=15.00,0,0,0,dh"
-                target="_blank"
-                class="naver-map-btn"
-              >
-                네이버 지도에서 크게 보기
-              </a>
-            </div>
-          </section>
-        </div>
-        <!-- ── 버스 내부 끝 ── -->
-
-        <!-- ── 버스 하단 (번호판) ── -->
-        <div class="bus-bottom">
-          <div class="license-plate">인천 가 0118</div>
+          <span class="cal-sun">31</span>
         </div>
       </div>
-      <!-- ── bus-frame 끝 ── -->
-    </div>
+      <div class="dday-info">
+        <p>김지환 <span class="heart-sm">♥</span> 이수연의 결혼식이
+          <strong>{{ dday }}</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- ── 갤러리 ── -->
+    <section class="gallery-section reveal">
+      <div class="section-icon">📸</div>
+      <h2 class="section-title">우리의 이야기</h2>
+      <div class="gallery-grid">
+        <div
+          v-for="(photo, i) in galleryPhotos"
+          :key="i"
+          class="gallery-item reveal-item"
+          :style="{ '--d': i }"
+          @click="openLightbox(i)"
+        >
+          <div class="photo-placeholder" :style="{ background: photo.bg }">
+            <span class="photo-label">{{ photo.label }}</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 라이트박스 -->
+    <Teleport to="body">
+      <div v-if="lightboxOpen" class="lightbox" @click="closeLightbox">
+        <div class="lightbox-inner" @click.stop>
+          <button class="lb-close" @click="closeLightbox">✕</button>
+          <button class="lb-prev" @click="prevPhoto">‹</button>
+          <div class="lb-photo" :style="{ background: galleryPhotos[lightboxIndex].bg }">
+            <span class="photo-label">{{ galleryPhotos[lightboxIndex].label }}</span>
+          </div>
+          <button class="lb-next" @click="nextPhoto">›</button>
+          <div class="lb-counter">{{ lightboxIndex + 1 }} / {{ galleryPhotos.length }}</div>
+        </div>
+      </div>
+    </Teleport>
+
+    <!-- ── 오시는 길 ── -->
+    <section class="location-section reveal">
+      <div class="section-icon">📍</div>
+      <h2 class="section-title">오시는 길</h2>
+      <div class="venue-card">
+        <h3 class="venue-name">그랜드 컨벤션홀</h3>
+        <p class="venue-floor">3층 루체홀</p>
+        <p class="venue-address">서울특별시 강남구 테헤란로 123</p>
+        <p class="venue-tel">TEL. 02-1234-5678</p>
+      </div>
+
+      <div class="map-container">
+        <div class="map-placeholder">
+          <span>🗺️ 지도 영역</span>
+          <p>실제 지도 API 연동 예정</p>
+        </div>
+      </div>
+
+      <div class="transport-info">
+        <div class="transport-item">
+          <span class="transport-icon">🚇</span>
+          <div>
+            <strong>지하철</strong>
+            <p>2호선 강남역 3번 출구 도보 5분</p>
+          </div>
+        </div>
+        <div class="transport-item">
+          <span class="transport-icon">🚌</span>
+          <div>
+            <strong>버스</strong>
+            <p>간선 140, 144, 145 / 지선 4412</p>
+          </div>
+        </div>
+        <div class="transport-item">
+          <span class="transport-icon">🚗</span>
+          <div>
+            <strong>주차</strong>
+            <p>건물 내 지하주차장 2시간 무료</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="map-buttons">
+        <a href="https://map.naver.com/" target="_blank" class="map-btn naver">네이버 지도</a>
+        <a href="https://map.kakao.com/" target="_blank" class="map-btn kakao">카카오맵</a>
+        <a href="https://www.tmap.co.kr/" target="_blank" class="map-btn tmap">티맵</a>
+      </div>
+    </section>
+
+    <!-- ── 연회 안내 ── -->
+    <section class="info-section reveal">
+      <div class="section-icon">🍽️</div>
+      <h2 class="section-title">식사 안내</h2>
+      <div class="info-card">
+        <p>연회장 : 3층 연회홀</p>
+        <p>이용시간 : 12시 30분 ~ 14시 30분</p>
+        <p>음료 · 주류 무제한 제공</p>
+      </div>
+    </section>
+
+    <!-- ── 축의금 계좌 ── -->
+    <section class="account-section reveal">
+      <div class="section-icon">💰</div>
+      <h2 class="section-title">마음 전하실 곳</h2>
+      <p class="account-desc">축하의 마음을 전해주세요</p>
+
+      <div class="account-group">
+        <button class="account-toggle" @click="toggleAccount('groom')">
+          <span>신랑측 계좌번호</span>
+          <span class="toggle-arrow" :class="{ open: accountOpen.groom }">▼</span>
+        </button>
+        <Transition name="slide">
+          <div v-if="accountOpen.groom" class="account-list">
+            <div class="account-item">
+              <span class="account-label">신랑 김지환</span>
+              <span class="account-number">국민은행 000-000-00-000000</span>
+              <button class="copy-btn" @click="copyAccount('국민은행 000-000-00-000000')">복사</button>
+            </div>
+            <div class="account-item">
+              <span class="account-label">부 김영호</span>
+              <span class="account-number">신한은행 000-000-000000</span>
+              <button class="copy-btn" @click="copyAccount('신한은행 000-000-000000')">복사</button>
+            </div>
+            <div class="account-item">
+              <span class="account-label">모 박미정</span>
+              <span class="account-number">우리은행 0000-000-000000</span>
+              <button class="copy-btn" @click="copyAccount('우리은행 0000-000-000000')">복사</button>
+            </div>
+          </div>
+        </Transition>
+      </div>
+
+      <div class="account-group">
+        <button class="account-toggle" @click="toggleAccount('bride')">
+          <span>신부측 계좌번호</span>
+          <span class="toggle-arrow" :class="{ open: accountOpen.bride }">▼</span>
+        </button>
+        <Transition name="slide">
+          <div v-if="accountOpen.bride" class="account-list">
+            <div class="account-item">
+              <span class="account-label">신부 이수연</span>
+              <span class="account-number">카카오뱅크 3333-00-0000000</span>
+              <button class="copy-btn" @click="copyAccount('카카오뱅크 3333-00-0000000')">복사</button>
+            </div>
+            <div class="account-item">
+              <span class="account-label">부 이상훈</span>
+              <span class="account-number">하나은행 000-000000-00000</span>
+              <button class="copy-btn" @click="copyAccount('하나은행 000-000000-00000')">복사</button>
+            </div>
+            <div class="account-item">
+              <span class="account-label">모 정은희</span>
+              <span class="account-number">농협 000-0000-0000-00</span>
+              <button class="copy-btn" @click="copyAccount('농협 000-0000-0000-00')">복사</button>
+            </div>
+          </div>
+        </Transition>
+      </div>
+    </section>
+
+    <!-- ── 참석 여부 ── -->
+    <section class="rsvp-section reveal">
+      <div class="section-icon">✉️</div>
+      <h2 class="section-title">참석 여부 전달</h2>
+      <p class="rsvp-desc">
+        참석 여부를 미리 알려주시면<br>
+        준비하는 데 큰 도움이 됩니다.
+      </p>
+      <div class="rsvp-form">
+        <div class="rsvp-field">
+          <label>성함</label>
+          <input v-model="rsvp.name" type="text" placeholder="성함을 입력해주세요" />
+        </div>
+        <div class="rsvp-field">
+          <label>참석 여부</label>
+          <div class="rsvp-radio-group">
+            <label class="rsvp-radio">
+              <input v-model="rsvp.attending" type="radio" value="yes" />
+              <span>참석</span>
+            </label>
+            <label class="rsvp-radio">
+              <input v-model="rsvp.attending" type="radio" value="no" />
+              <span>불참</span>
+            </label>
+          </div>
+        </div>
+        <div class="rsvp-field">
+          <label>식사 인원</label>
+          <div class="rsvp-counter">
+            <button @click="rsvp.guests = Math.max(1, rsvp.guests - 1)">−</button>
+            <span>{{ rsvp.guests }}명</span>
+            <button @click="rsvp.guests = Math.min(10, rsvp.guests + 1)">+</button>
+          </div>
+        </div>
+        <button class="rsvp-submit" @click="submitRsvp">전달하기</button>
+      </div>
+    </section>
+
+    <!-- ── 화환 안내 ── -->
+    <section class="notice-section reveal">
+      <p class="notice-text">
+        화환은 정중히 사양합니다.<br>
+        보내주시는 마음만으로도 큰 축복이 됩니다.
+      </p>
+    </section>
+
+    <!-- ── 푸터 ── -->
+    <footer class="wedding-footer">
+      <p class="footer-names">지환 ♥ 수연</p>
+      <p class="footer-date">2026. 05. 17</p>
+    </footer>
+
+    <!-- 토스트 메시지 -->
+    <Transition name="toast">
+      <div v-if="toastVisible" class="toast-msg">{{ toastMessage }}</div>
+    </Transition>
   </div>
 </template>
 
 <script setup>
-useHead({
-  title: "511 BAND — 공연 초대장",
-  meta: [
-    { name: "description", content: "511 밴드 공연 초대장" },
-    { property: "og:title", content: "511 BAND 공연 초대장" },
-    { property: "og:description", content: "511 밴드 공연 초대장" },
-    { property: "og:type", content: "website" },
-    { name: "twitter:card", content: "summary" },
-    { name: "twitter:title", content: "511 BAND 공연 초대장" },
-    { name: "twitter:description", content: "511 밴드 공연 초대장" },
-  ],
-});
+const dday = computed(() => {
+  const wedding = new Date('2026-05-17T13:00:00+09:00')
+  const today = new Date()
+  today.setHours(0, 0, 0, 0)
+  const weddingDay = new Date(wedding)
+  weddingDay.setHours(0, 0, 0, 0)
+  const diff = Math.ceil((weddingDay - today) / (1000 * 60 * 60 * 24))
+  if (diff === 0) return '바로 오늘입니다!'
+  if (diff > 0) return `${diff}일 남았습니다`
+  return '행복하게 잘 살고 있습니다 💕'
+})
+
+const galleryPhotos = [
+  { label: 'PHOTO 1', bg: 'linear-gradient(135deg, #e8d5b7 0%, #c9a96e 100%)' },
+  { label: 'PHOTO 2', bg: 'linear-gradient(135deg, #d5c4a1 0%, #b8956a 100%)' },
+  { label: 'PHOTO 3', bg: 'linear-gradient(135deg, #f0e6d3 0%, #d4b896 100%)' },
+  { label: 'PHOTO 4', bg: 'linear-gradient(135deg, #e2d1b8 0%, #c4a882 100%)' },
+  { label: 'PHOTO 5', bg: 'linear-gradient(135deg, #ddd0ba 0%, #bfa277 100%)' },
+  { label: 'PHOTO 6', bg: 'linear-gradient(135deg, #ecdcc6 0%, #d1b58f 100%)' },
+]
+
+const lightboxOpen = ref(false)
+const lightboxIndex = ref(0)
+const openLightbox = (i) => { lightboxIndex.value = i; lightboxOpen.value = true }
+const closeLightbox = () => { lightboxOpen.value = false }
+const prevPhoto = () => { lightboxIndex.value = (lightboxIndex.value - 1 + galleryPhotos.length) % galleryPhotos.length }
+const nextPhoto = () => { lightboxIndex.value = (lightboxIndex.value + 1) % galleryPhotos.length }
+
+const accountOpen = reactive({ groom: false, bride: false })
+const toggleAccount = (side) => { accountOpen[side] = !accountOpen[side] }
+
+const toastVisible = ref(false)
+const toastMessage = ref('')
+const showToast = (msg) => {
+  toastMessage.value = msg
+  toastVisible.value = true
+  setTimeout(() => { toastVisible.value = false }, 2000)
+}
+
+const copyAccount = async (text) => {
+  try {
+    await navigator.clipboard.writeText(text)
+    showToast('계좌번호가 복사되었습니다')
+  } catch {
+    showToast('복사에 실패했습니다')
+  }
+}
+
+const rsvp = reactive({ name: '', attending: 'yes', guests: 1 })
+const submitRsvp = () => {
+  if (!rsvp.name.trim()) {
+    showToast('성함을 입력해주세요')
+    return
+  }
+  showToast('참석 여부가 전달되었습니다. 감사합니다!')
+  rsvp.name = ''
+  rsvp.attending = 'yes'
+  rsvp.guests = 1
+}
 
 onMounted(() => {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
+          entry.target.classList.add('visible')
+          observer.unobserve(entry.target)
         }
-      });
+      })
     },
-    { threshold: 0.12 }
-  );
+    { threshold: 0.1 }
+  )
 
   document
-    .querySelectorAll(".reveal, .reveal-item")
-    .forEach((el) => observer.observe(el));
-});
+    .querySelectorAll('.reveal, .reveal-item')
+    .forEach((el) => observer.observe(el))
+})
 </script>

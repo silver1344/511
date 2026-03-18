@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8d5b7"/>
+      <stop offset="100%" style="stop-color:#c9a96e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="220" text-anchor="middle" font-family="serif" font-size="28" fill="rgba(255,255,255,0.8)" letter-spacing="8">W E D D I N G</text>
+  <text x="600" y="310" text-anchor="middle" font-family="serif" font-size="72" fill="white" font-weight="bold">지환 ♥ 수연</text>
+  <text x="600" y="400" text-anchor="middle" font-family="sans-serif" font-size="28" fill="rgba(255,255,255,0.9)" letter-spacing="3">2026. 05. 17. SUN PM 1:00</text>
+  <text x="600" y="450" text-anchor="middle" font-family="sans-serif" font-size="22" fill="rgba(255,255,255,0.7)">그랜드 컨벤션홀 3층 루체홀</text>
+</svg>
