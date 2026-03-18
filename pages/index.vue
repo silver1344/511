@@ -8,7 +8,7 @@
         <h1 class="hero-names">
           <span class="groom-name">지환</span>
           <span class="heart-icon">♥</span>
-          <span class="bride-name">수연</span>
+          <span class="bride-name">형걸</span>
         </h1>
         <p class="hero-date">2026. 05. 17. SUN PM 1:00</p>
         <p class="hero-venue">그랜드 컨벤션홀 3층 루체홀</p>
@@ -34,13 +34,13 @@
       <div class="parents-info">
         <p class="parent-line">
           <span class="parent-role">신랑측</span>
-          <span class="parent-names">김영호 · 박미정</span>의 장남
+          <span class="parent-names">김완섭 · 김준형</span>의 장남
           <span class="child-name">지환</span>
         </p>
         <p class="parent-line">
           <span class="parent-role">신부측</span>
-          <span class="parent-names">이상훈 · 정은희</span>의 차녀
-          <span class="child-name">수연</span>
+          <span class="parent-names">박유진 · 방성일</span>의 차녀
+          <span class="child-name">형걸</span>
         </p>
       </div>
     </section>
@@ -104,7 +104,7 @@
         </div>
       </div>
       <div class="dday-info">
-        <p>김지환 <span class="heart-sm">♥</span> 이수연의 결혼식이
+        <p>김지환 <span class="heart-sm">♥</span> 이형걸의 결혼식이
           <strong>{{ dday }}</strong>
         </p>
       </div>
@@ -223,12 +223,12 @@
               <button class="copy-btn" @click="copyAccount('국민은행 000-000-00-000000')">복사</button>
             </div>
             <div class="account-item">
-              <span class="account-label">부 김영호</span>
+              <span class="account-label">부 김완섭</span>
               <span class="account-number">신한은행 000-000-000000</span>
               <button class="copy-btn" @click="copyAccount('신한은행 000-000-000000')">복사</button>
             </div>
             <div class="account-item">
-              <span class="account-label">모 박미정</span>
+              <span class="account-label">모 김준형</span>
               <span class="account-number">우리은행 0000-000-000000</span>
               <button class="copy-btn" @click="copyAccount('우리은행 0000-000-000000')">복사</button>
             </div>
@@ -244,17 +244,17 @@
         <Transition name="slide">
           <div v-if="accountOpen.bride" class="account-list">
             <div class="account-item">
-              <span class="account-label">신부 이수연</span>
+              <span class="account-label">신부 이형걸</span>
               <span class="account-number">카카오뱅크 3333-00-0000000</span>
               <button class="copy-btn" @click="copyAccount('카카오뱅크 3333-00-0000000')">복사</button>
             </div>
             <div class="account-item">
-              <span class="account-label">부 이상훈</span>
+              <span class="account-label">부 박유진</span>
               <span class="account-number">하나은행 000-000000-00000</span>
               <button class="copy-btn" @click="copyAccount('하나은행 000-000000-00000')">복사</button>
             </div>
             <div class="account-item">
-              <span class="account-label">모 정은희</span>
+              <span class="account-label">모 방성일</span>
               <span class="account-number">농협 000-0000-0000-00</span>
               <button class="copy-btn" @click="copyAccount('농협 000-0000-0000-00')">복사</button>
             </div>
@@ -311,7 +311,7 @@
 
     <!-- ── 푸터 ── -->
     <footer class="wedding-footer">
-      <p class="footer-names">지환 ♥ 수연</p>
+      <p class="footer-names">지환 ♥ 형걸</p>
       <p class="footer-date">2026. 05. 17</p>
     </footer>
 
