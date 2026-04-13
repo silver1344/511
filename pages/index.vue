@@ -83,11 +83,11 @@
               </div>
               <div class="setlist-item reveal-item" style="--d:3">
                 <span class="track-num">4</span>
-                <span class="track-text">Official髭男dism — Pretender</span>
+                <span class="track-text">DAY6 — 그녀가 웃었다</span>
               </div>
               <div class="setlist-item reveal-item" style="--d:4">
                 <span class="track-num">5</span>
-                <span class="track-text">DAY6 — 그녀가 웃었다</span>
+                <span class="track-text">Official髭男dism — Pretender</span>
               </div>
               <div class="setlist-item reveal-item" style="--d:5">
                 <span class="track-num">6</span>
