@@ -69,10 +69,9 @@
             <h3 class="setlist-title">🎵 SET LIST</h3>
 
             <div class="setlist-part">
-              <h4 class="part-title">1 부</h4>
               <div class="setlist-item reveal-item" style="--d:0">
                 <span class="track-num">1</span>
-                <span class="track-text">Wave To Earth — 사랑으로</span>
+                <span class="track-text">한로로 — 사랑하게 될거야</span>
               </div>
               <div class="setlist-item reveal-item" style="--d:1">
                 <span class="track-num">2</span>
@@ -80,36 +79,18 @@
               </div>
               <div class="setlist-item reveal-item" style="--d:2">
                 <span class="track-num">3</span>
-                <span class="track-text">한로로 — 사랑하게 될거야</span>
+                <span class="track-text">Honne — Free Love</span>
               </div>
               <div class="setlist-item reveal-item" style="--d:3">
                 <span class="track-num">4</span>
-                <span class="track-text">10cm — 너에게 닿기를</span>
+                <span class="track-text">Official髭男dism — Pretender</span>
               </div>
-            </div>
-
-            <div class="break-time">
-              <span class="break-dots">· · ·</span>
-              <span class="break-text">쉬는 시간</span>
-              <span class="break-dots">· · ·</span>
-            </div>
-
-            <div class="setlist-part">
-              <h4 class="part-title">2 부</h4>
               <div class="setlist-item reveal-item" style="--d:4">
                 <span class="track-num">5</span>
-                <span class="track-text">DAY6 — Welcome to the Show</span>
+                <span class="track-text">DAY6 — 그녀가 웃었다</span>
               </div>
               <div class="setlist-item reveal-item" style="--d:5">
                 <span class="track-num">6</span>
-                <span class="track-text">Official髭男dism — Pretender</span>
-              </div>
-              <div class="setlist-item reveal-item" style="--d:6">
-                <span class="track-num">7</span>
-                <span class="track-text">DAY6 — 그녀가 웃었다</span>
-              </div>
-              <div class="setlist-item reveal-item" style="--d:7">
-                <span class="track-num">8</span>
                 <span class="track-text">전영호 — Butterfly</span>
               </div>
             </div>
