@@ -71,11 +71,11 @@
             <div class="setlist-part">
               <div class="setlist-item reveal-item" style="--d:0">
                 <span class="track-num">1</span>
-                <span class="track-text">Honne — Free Love</span>
+                <span class="track-text">한로로 — 사랑하게 될거야</span>
               </div>
               <div class="setlist-item reveal-item" style="--d:1">
                 <span class="track-num">2</span>
-                <span class="track-text">한로로 — 사랑하게 될거야</span>
+                <span class="track-text">Honne — Free Love</span>
               </div>
               <div class="setlist-item reveal-item" style="--d:2">
                 <span class="track-num">3</span>
