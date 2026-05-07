@@ -129,6 +129,19 @@
               </a>
             </div>
           </section>
+
+          <div class="section-divider"></div>
+
+          <!-- 포스터 -->
+          <section class="poster reveal">
+            <div class="map-container">
+              <img
+                src="/assets/images/poster.jpeg"
+                alt="511 밴드 공연 포스터"
+                class="map-image"
+              />
+            </div>
+          </section>
         </div>
         <!-- ── 버스 내부 끝 ── -->
 
